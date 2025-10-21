@@ -1,0 +1,33 @@
+.category-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--neutral-color);
+    font-size: 1.1em;
+}
+
+.category-nav ul li {
+    margin: 0;
+}
+
+.category-nav ul li a {
+    display: block;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.category-nav ul li a.active {
+  display: block;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+}
+
+.category-nav ul li:hover {
+    background-color: var(--primary-color);
+}
+
+.button.category-button {
+  background-color: var(--neutral-color);
+}

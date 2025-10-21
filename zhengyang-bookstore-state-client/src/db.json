@@ -1,0 +1,230 @@
+{
+  "categories": [
+    {
+      "categoryId": 1001,
+      "name": "Romance"
+    },
+    {
+      "categoryId": 1002,
+      "name": "Science Fiction & Fantasy"
+    },
+    {
+      "categoryId": 1003,
+      "name": "Mystery, Thriller & Suspense"
+    },
+    {
+      "categoryId": 1004,
+      "name": "History"
+    }
+  ],
+  "books": [
+    {
+      "bookId": 1001,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 599,
+      "isPublic": true,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1002,
+      "title": "The Pumpkin Spice Cafe",
+      "author": "Laurie Gilmore",
+      "price": 599,
+      "isPublic": false,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1003,
+      "title": "Wild Card",
+      "author": "Elsie Silver",
+      "price": 599,
+      "isPublic": false,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1004,
+      "title": "The First Witch of Boston",
+      "author": "Andrea Catalano",
+      "price": 599,
+      "isPublic": false,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1005,
+      "title": "The Boyfriend",
+      "author": "Freida McFadden",
+      "price": 599,
+      "isPublic": false,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1026,
+      "title": "Eldritch",
+      "author": "Keri Lake",
+      "price": 599,
+      "isPublic": false,
+      "categoryId": 1001
+    },
+    {
+      "bookId": 1006,
+      "title": "Project Hail Mary",
+      "author": "Andy Weir",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1007,
+      "title": "Quicksilver",
+      "author": "Callie Hart",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1008,
+      "title": "Dungeon Crawler Carl",
+      "author": "Matt Dinniman",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1009,
+      "title": "Fearful",
+      "author": "Lauren Roberts",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1010,
+      "title": "A Court of Thorns and Roses",
+      "author": "Sarah J. Maas",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1011,
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "price": 799,
+      "isPublic": true,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1012,
+      "title": "Dating After the End of the World",
+      "author": "Jeneva Rose",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1013,
+      "title": "Onyx Storm",
+      "author": "Rebecca Yarros",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1002
+    },
+    {
+      "bookId": 1014,
+      "title": "The Academy",
+      "author": "Elin Hilderbrand",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1015,
+      "title": "The Long Walk",
+      "author": "Stephen King",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1027,
+      "title": "Secret of Secrets",
+      "author": "Dan Brown",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1028,
+      "title": "We Are All Guilty Here",
+      "author": "Karin Slaughter",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1029,
+      "title": "The Housemaid",
+      "author": "Freida McFadden",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1030,
+      "title": "Broken Country",
+      "author": "Clare Leslie Hall",
+      "price": 799,
+      "isPublic": false,
+      "categoryId": 1003
+    },
+    {
+      "bookId": 1016,
+      "title": "On Tyranny",
+      "author": "Timothy Snyder",
+      "price": 699,
+      "isPublic": false,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1017,
+      "title": "Complete Works of John Locke",
+      "author": "John Locke",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1018,
+      "title": "The 1619 Project",
+      "author": "Nikole Hannah-Jones",
+      "price": 699,
+      "isPublic": false,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1019,
+      "title": "The Vatican Princess",
+      "author": "Lucrezia Borgia",
+      "price": 699,
+      "isPublic": false,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1020,
+      "title": "Code Name Helene",
+      "author": "Ariel Lawhon",
+      "price": 699,
+      "isPublic": false,
+      "categoryId": 1004
+    },
+    {
+      "bookId": 1031,
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "price": 699,
+      "isPublic": true,
+      "categoryId": 1004
+    }
+  ]
+}
