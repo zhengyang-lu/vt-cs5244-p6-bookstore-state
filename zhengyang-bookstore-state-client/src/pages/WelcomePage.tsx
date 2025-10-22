@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { CategoryProps } from "../types";
 import { heroImagePrefix } from "../utils";
 import "./WelcomePage.css";
+import { useCategoryContext } from '../contexts/CategoryContext';
 
-export default function WelcomePage(props: CategoryProps) {
-  const firstCategory = props.categories[0];
+export default function WelcomePage() {
+  const { categories } = useCategoryContext();
+  const firstCategory = categories[0];
   return (
     <div className="home-page">
       <section className="hero-section">
