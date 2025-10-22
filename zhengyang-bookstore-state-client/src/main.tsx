@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { CategoryProvider } from './contexts/CategoryContext';
 import App from "./App.tsx";
 import "./assets/global.css";
 // import "./index.css";
@@ -8,7 +9,9 @@ import "./assets/global.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <App />
+      <CategoryProvider>
+        <App />
+      </CategoryProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
