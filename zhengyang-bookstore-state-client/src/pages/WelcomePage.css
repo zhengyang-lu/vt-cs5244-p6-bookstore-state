@@ -35,7 +35,7 @@
     font-weight: 900;
     padding: 1em 2em;
     border-radius: 4px;
-    transition: scale 1s;
+    transition: scale .25s;
 }
 
 .hero-button:hover {
