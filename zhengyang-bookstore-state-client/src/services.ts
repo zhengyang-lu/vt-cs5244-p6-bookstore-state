@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { CategoryItem } from './types';
+import { BookItem, CategoryItem } from './types';
 
 const apiUrl =
     `${location.protocol}//${location.hostname}:` +
@@ -11,4 +11,7 @@ export const fetchCategories = async (): Promise<CategoryItem[]> => {
     return response.data as CategoryItem[];
 };
 
-// add a method fetchBooksByCategoryName that takes a categoryName and requests book items
+export const fetchBooksByCategoryName = async (categoryName: string): Promise<BookItem[]> => {
+    const response = await axios.get(`${apiUrl}/categories/name/${categoryName}/books/`);
+    return response.data as BookItem[];
+}

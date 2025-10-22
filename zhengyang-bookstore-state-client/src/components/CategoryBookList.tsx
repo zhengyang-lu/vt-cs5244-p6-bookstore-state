@@ -1,26 +1,26 @@
-import axios from "axios";
-import { apiUrl } from "../utils";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./CategoryBookList.css";
 import CategoryBookListItem from "./CategoryBookListItem.tsx";
+import { fetchBooksByCategoryName } from "../services.ts";
+import { BookItem } from "../types.ts";
 
 export default function CategoryBookList() {
-  const { categoryName } = useParams();
-
-  const [bookList, setBookList] = useState([]);
+  const { categoryName } = useParams<{ categoryName: string }>();
+  const [bookList, setBookList] = useState<BookItem[]>([]);
 
   useEffect(() => {
-      axios.get(`${apiUrl}/categories/name/${categoryName}/books/`)
-          .then((result) => setBookList(result.data))
-          .catch(console.error);
+    if (categoryName) {
+      fetchBooksByCategoryName(categoryName)
+        .then((books) => {
+          setBookList(books);
+        })
+        .catch(console.error);
+    }
   }, [categoryName]);
-  
 
   const bookBoxList = bookList.map((myBook) => (
-    <li>
-      <CategoryBookListItem book={myBook} />
-    </li>
+    <CategoryBookListItem key={myBook.bookId} book={myBook} />
   ));
   return <ul className="book-list">{bookBoxList}</ul>;
 }

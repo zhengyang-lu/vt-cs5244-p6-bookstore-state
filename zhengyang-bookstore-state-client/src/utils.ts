@@ -14,8 +14,3 @@ export const categoryImagePrefix = `${
 export const siteImagePrefix = `${import.meta.env.BASE_URL}/site-images/`;
 
 export const heroImagePrefix = `${import.meta.env.BASE_URL}/hero-images/`;
-
-export const apiUrl = 
-  `${location.protocol}//${location.hostname}:` + 
-  `${location.port === '5173' ? '8080' : location.port}` + 
-  `${import.meta.env.BASE_URL}/api`
