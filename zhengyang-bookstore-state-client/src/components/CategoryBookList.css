@@ -1,6 +1,7 @@
 .book-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 1em 10em; /* Adjust the second value for more or less padding */
   gap: 1em;
+  width: 70%;
+  margin: 0 auto;
 }
