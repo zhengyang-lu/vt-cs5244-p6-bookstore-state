@@ -1,5 +1,5 @@
 {
-  "name": "zhengyang-bookstore-fetch-client",
+  "name": "zhengyang-bookstore-state-client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
