@@ -1,5 +1,3 @@
-// import types
-// import { getBooksForCategory } from "../data";
 import axios from "axios";
 import { apiUrl } from "../utils";
 import { useState, useEffect } from "react";
@@ -24,5 +22,5 @@ export default function CategoryBookList() {
       <CategoryBookListItem book={myBook} />
     </li>
   ));
-  return <ul>{bookBoxList}</ul>;
+  return <ul className="book-list">{bookBoxList}</ul>;
 }
