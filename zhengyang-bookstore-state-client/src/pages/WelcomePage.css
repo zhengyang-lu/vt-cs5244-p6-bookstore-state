@@ -21,7 +21,7 @@
 .hero-text {
     position: absolute;
     top: 1em;
-    right: 1em;
+    right: 2em;
     color: white;
     text-align: right;
     padding: 1em;
@@ -30,11 +30,16 @@
 .hero-button {
     position: absolute;
     bottom: 1em;
-    right: 1em;
+    right: 2em;
     font-size: 1.5em;
     font-weight: 900;
     padding: 1em 2em;
     border-radius: 4px;
+    transition: scale 1s;
+}
+
+.hero-button:hover {
+    scale: 120%;
 }
 
 .hero-text-title {
