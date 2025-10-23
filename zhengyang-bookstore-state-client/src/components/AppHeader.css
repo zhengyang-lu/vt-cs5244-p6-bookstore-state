@@ -96,16 +96,18 @@ header {
 
 .cart-item-count {
     position: absolute;
-    top: 0em;
-    left: 1em;
+    top: -0.5em;
+    left: 1.0em;
     background-color: var(--primary-color);
     color: white;
-    border-radius: 50%;
-    width: 1.2em;
-    height: 1.2em;
-    font-size: 0.5em;
+    font-size: .4em;
+    font-weight: bold;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    padding: 0.4em 0.6em;
+    min-width: 1.8em;
+    min-height: 1.8em;
+    border-radius: 1em;
 }
