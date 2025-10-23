@@ -2,8 +2,14 @@ import { BookItem } from "../types";
 import { getSlug, bookImagePrefix } from "../utils";
 import "./CategoryBookListItem.css";
 import { Link } from "react-router-dom";
+import { useCart } from '../contexts/CartContext';
+
 export default function CategoryBookListItem(props: { book: BookItem }) {
     const bookImageFileName = `${getSlug(props.book.title)}.png`;
+    const { dispatch } = useCart();
+    const handleAddToCart = () => {
+        dispatch({ type: 'ADD_BOOK', book: props.book });
+    };
     return (
         <li className="book-box">
             <div className="book-image">
@@ -21,7 +27,7 @@ export default function CategoryBookListItem(props: { book: BookItem }) {
             <div className="book-author">{props.book.author}</div>
             <div className="book-price">${(props.book.price / 100).toFixed(2)}</div>
             <div className="book-buttons">
-                <button className="button add-to-cart-button">
+                <button className="button add-to-cart-button" onClick={handleAddToCart}>
                     <i className="icon-shopping-cart"></i>
                     <span>Add to cart</span>
                 </button>

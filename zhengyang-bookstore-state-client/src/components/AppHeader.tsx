@@ -2,7 +2,12 @@ import HeaderDropdown from "./HeaderDropdown";
 import { Link } from "react-router-dom";
 import "./AppHeader.css";
 import { siteImagePrefix } from "../utils";
+import { useCart } from "../contexts/CartContext";
+
 export default function AppHeader() {
+
+    const { cart } = useCart();
+
     return (
         <header className="container">
             <section className="bookstore-logo-and-name">
@@ -30,7 +35,7 @@ export default function AppHeader() {
                 <HeaderDropdown />
                 <button className="button cart-button">
                     <i className="icon-shopping-cart"></i>
-                    <span className="cart-item-count">0</span>
+                    <span className="cart-item-count">{cart.numberOfItems}</span>
                 </button>
                 <button className="button login-button">
                     <i className="icon-user"></i>
